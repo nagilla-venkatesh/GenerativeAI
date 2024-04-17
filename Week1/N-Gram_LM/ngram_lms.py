@@ -13,9 +13,6 @@ def n_grams(tokens: List[str], n: int) -> List[Tuple[str]]:
 
 # Write a new version of n_grams function that includes the control tokens. 
 # control tokens are: "beginning of sentence" (BOS) and "end of sentence" (EOS)
-"""
-[('<BOS>', '<BOS>', 'It'), ('<BOS>', 'It', 'shows'), ('It', 'shows', ','), ('shows', ',', 'my'), (',', 'my', 'dear'), ('my', 'dear', 'Watson'), ('dear', 'Watson', ','), ('Watson', ',', 'that'), (',', 'that', 'we'), ('that', 'we', 'are'), ('we', 'are', 'dealing'), ('are', 'dealing', 'with'), ('dealing', 'with', 'an'), ('with', 'an', 'exceptionally'), ('an', 'exceptionally', 'astute'), ('exceptionally', 'astute', 'and'), ('astute', 'and', 'dangerous'), ('and', 'dangerous', 'man'), ('dangerous', 'man', '.'), ('man', '.', '<EOS>'), ('.', '<EOS>', '<EOS>')]
-"""
 
 # Write a new version of n_grams function that includes the control tokens as above example. 
 def n_gram_control_tokens(tokens: List[str], n: int) -> List[Tuple[str]]:
@@ -43,4 +40,5 @@ def build_ngram_model(texts: List[List[str]], n: int) -> Dict[Tuple[str, ...], D
         total_count = sum(next_word_counts.values())
         ngrams_probs[ngram] = {next_word: count/total_count for next_word, count in next_word_counts.items()}
     return ngrams_probs
-        
+
+
