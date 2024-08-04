@@ -1,0 +1,9 @@
+Algorithms
+1. Searching algorithms like linear, binary search.
+2. Sorting algorithms like merge sort, quick sort, insertion sort, bucket sort, etc.,
+3. Tree Traversals like preOrder, InOrder, PostOrder, level order traversals etc.
+4. Graph Traversals like Depth First Search, BreadFirst Search and graph based algorithms like Dijikstras, prims, kruskals etc.,
+5. BackTracking/Recursion approach related algorithms
+6. Greedy Approach related algorithms
+7. Divide and Conquer approach related algorithms
+8. Dynamic Programming
